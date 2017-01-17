@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "base-lifecycle.js",
+  "scripts": {
+    "start": "gulp --gulpfile javascript.build.js"
+  },
+  "author": "Falk Hoppe <falkhoppe81@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "del": "2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-lifecycle": "file:///Users/falk/code/github.com/mechanoid/gulp-lifecycle",
+    "gulp-print": "2.0.1"
+  }
+}
