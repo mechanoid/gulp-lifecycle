@@ -18,8 +18,6 @@ const config = {
 
   build: {
     get path() { return join(config.buildPath, config.baseName) },
-    get jsGlob() { return join(this.path, '**/*.js') },
-    get bundleName() { return 'application.js' },
   }
 };
 
@@ -27,7 +25,7 @@ class JsBuild extends BaseLifecycle {
 
   registerBuild() {
     gulp.task('list-files', () =>
-      gulp.src(config.build.jsGlob)
+      gulp.src(config.src.jsGlob)
         .pipe(print())
         .pipe(gulp.dest(config.build.path)));
 
